@@ -1,0 +1,40 @@
+.app {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 2;
+  .input {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    right: 50%;
+
+    .input--wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      label {
+        margin-bottom: 8px;
+      }
+
+      .input--field {
+        margin: 0 16px;
+        padding: 12px 8px;
+        text-align: center;
+        border-radius: 12px;
+        border: 2px solid black;
+        font-size: 16px;
+        font-weight: 500;
+        transition: ease-out 0.3s;
+      }
+
+      .input--field:focus {
+        padding: 12px 12px;
+      }
+    }
+  }
+}
